@@ -27,4 +27,7 @@ vecums = [24, 18, 45 ]
 ierakstit("", "tekstam/cilveki.txt")
 for i in range( len(vardi) ):
     teksts = "{} {} - {} \n".format(vardi[i], uzvardi[i], vecums[i])
-    pieierakstit(teksts, "faili/cilveki.txt")
+    pieierakstit(teksts, "faili/cilveki.txt")    
+    
+    
+    def
