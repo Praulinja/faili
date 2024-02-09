@@ -37,7 +37,7 @@ for i in range( len(vardi) ):
 # Izveidojas fails, kur katrā rindiņā ir vārds, uzvārds - vecums
 
 def uzrakstit_vestuli(vards, uzvards, dzimums, vecums, index):
-    if dzimums[i] == "s":
+    if dzimums == "s":
         sveiciens = "Sveika"
         laimets = "Jūs esat laimējusi"
     else:
@@ -60,7 +60,9 @@ def apstradat_datus(dati):
         dzimums = "s"
     else:
         dzimums = "v"
-    return [dati[0], dati[1], dzimums, dati[3][:-1]]
+    return [dati[0], dati[1], dzimums, int(dati[3][:-1])]
+
+
 
 cilveki = nolasit("tekstam/cilveki.txt")
 index = 1
